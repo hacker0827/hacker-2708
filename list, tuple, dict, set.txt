@@ -1,0 +1,47 @@
+my_list=[1,2,3,4,5,6] 
+print("\nTask 1]") 
+print("Original List : ",my_list) 
+my_list.reverse()                  
+print("Reversed List : ",my_list) 
+ 
+print("\nTask 2]") 
+my_list2=[2,1,4,3,2,3,2,2,1] 
+new_list=[]
+print("Original : ",my_list2) 
+for i in my_list2: 
+if i not in new_list: 
+new_list.append(i) 
+print("New Unique List : ",new_list) 
+tup=(1,2,3,4,2,1,2,2)
+ 
+print("\nTask 4]") 
+print("Tuple : ",tup) 
+print("Occurrences of 2 in Tuple : ",tup.count(2)) 
+
+
+print("\nTask 5]") 
+dict1={"Name":"Soumya","Age":19} 
+dict2={"Gender":"Female","Dept":"Comp RL"} 
+print("Dictionary 1 : ",dict1) 
+print("Dictionary 2 : ",dict2) 
+dict1.update(dict2)                 
+#update kahi return nahi krt existing madhe navin add krto fkta 
+print("After merging 2 dictionaries : ",dict1) 
+
+print("\nTask 6]") 
+d1={'b':3,'c':2,'a':1} 
+print("Original Dict : ",d1) 
+sorted_dict = dict(sorted(d1.items())) 
+print("Sorted Dictionary : ",sorted_dict)  
+
+print("\nTask 7 & 8]") 
+s1={4,2,1} 
+s2={6,1,2}
+print("Set 1 : ",s1) 
+print("Set 2 : ",s2) 
+s3=s1 & s2 
+#OR s3=s1.intersection(s2)   
+print("Intersection of s1 and s2 : ",s3) 
+s4=s1 | s2 
+#OR s4=s1.union(s2) 
+print("Union of s1 and s2 : ",s4)
